@@ -40,7 +40,7 @@ export default function Projects() {
           <div className="relative w-full h-72 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform duration-300">
             <Image src= {`${basePath}/solitary.jpg`} alt="" fill className="object-cover" />
           </div>
-          <p className="mt-4 text-lg font-medium">Solitary Dancer (2021)</p>
+          <p className="mt-4 text-lg font-medium">Solitary Dancer (2023)</p>
         </Link>
 
       </div>

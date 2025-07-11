@@ -11,7 +11,7 @@ export default function SolitaryDancer() {
             The Solitary Dancer
           </h1>
           <p className="text-center text-lg md:text-xl italic opacity-80 mb-12">
-            Symphony Music
+            2023 · Symphony Music
           </p>
 
           {/* Description */}
