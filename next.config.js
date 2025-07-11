@@ -1,11 +1,6 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
-const repoName = 'bhargavi-sardesai'; // replace if needed
-
 const nextConfig = {
   reactStrictMode: true,
-  basePath: isProd ? `/${repoName}` : '',
-  assetPrefix: isProd ? `/${repoName}/` : '',
   images: {
     unoptimized: true,
   },
