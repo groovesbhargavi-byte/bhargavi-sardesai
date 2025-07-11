@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
-//import { useRouter } from 'next/router';
 
 export default function Barbarik() {
-  //const { basePath } = useRouter();
   return (
     <div className="w-full min-h-screen bg-black text-white font-light">
         <Navbar />

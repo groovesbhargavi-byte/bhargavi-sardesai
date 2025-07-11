@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-//import { useRouter } from 'next/router';
 
 export default function Projects() {
-  //const { basePath } = useRouter();
   return (
     <section id="projects" className="min-h-screen px-6 py-16 text-white flex flex-col items-center">
       <h2 className="text-4xl font-semibold mb-4 text-center">Curations & Collaborations</h2>

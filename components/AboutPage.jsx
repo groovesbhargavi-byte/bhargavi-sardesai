@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
-//import { useRouter } from 'next/router';
 
 export default function AboutPage() {
-  //const { basePath } = useRouter();
   return (
     <div className="bg-[#0A2C2E] text-white px-6 md:px-20 py-16 space-y-24">
       {/* My Story */}

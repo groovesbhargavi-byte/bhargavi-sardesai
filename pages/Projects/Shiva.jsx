@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
-//import { useRouter } from 'next/router';
 
 export default function Shiva() {
-  //const { basePath } = useRouter();
   return (
     <>
       <Navbar />
