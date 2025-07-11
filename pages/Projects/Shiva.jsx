@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Navbar from '@/components/Navbar'; // include this if you're using a navbar
+import Navbar from '@/components/Navbar';
 //import { useRouter } from 'next/router';
 
 export default function Shiva() {
