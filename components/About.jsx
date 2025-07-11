@@ -20,10 +20,11 @@ export default function About() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/g9HmU_78uuU"
+            src="https://www.youtube.com/embed/HP2SnZ2KIwU"
             title="The Solitary Dancer"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            className="w-full h-full"
           ></iframe>
         </div>
       </div>

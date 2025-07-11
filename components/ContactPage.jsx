@@ -1,10 +1,7 @@
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import React from 'react';
 
 export default function ContactPage() {
-  const { basePath } = useRouter();
-
   return (
     <div className="min-h-screen bg-[#2E4C4C] text-white">
       <div className="text-center pt-20 pb-10">
@@ -15,7 +12,7 @@ export default function ContactPage() {
         {/* Left Image */}
         <div className="relative w-full lg:w-1/2 h-[600px]">
           <Image
-            src={`${basePath}/contact.jpg`} // ✅ Corrected path
+            src="/contact.jpg"
             alt="Bhargavi Dance Pose"
             fill
             className="object-cover"
@@ -42,12 +39,6 @@ export default function ContactPage() {
 
             <button type="submit" className="bg-[#FFA77B] text-black px-6 py-2 mt-4 hover:bg-[#ff9862]">Send</button>
           </form>
-
-          <div className="mt-8 flex gap-10 text-white underline text-lg">
-            <a href="#" target="_blank" rel="noopener noreferrer">Linkedin</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-          </div>
         </div>
       </div>
     </div>

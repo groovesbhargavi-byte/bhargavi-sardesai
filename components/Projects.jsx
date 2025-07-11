@@ -1,66 +1,46 @@
+import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 
 export default function Projects() {
-  const { basePath } = useRouter();
-
   return (
     <section id="projects" className="min-h-screen px-6 py-16 text-white flex flex-col items-center">
       <h2 className="text-4xl font-semibold mb-4 text-center">Curations & Collaborations</h2>
       <hr className="border-white w-24 mb-12 opacity-30" />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-5xl w-full">
+
         {/* Project 1 */}
-        <div className="text-center">
-          <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src={`${basePath}/Shrouds.jpeg`}
-              alt="Project 1"
-              fill
-              className="object-cover"
-            />
+        <Link href="/Projects/Shrouds" className="text-center group">
+          <div className="relative w-full h-72 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <Image src="/Shrouds.jpeg" alt="Shrouds Project" fill className="object-cover" />
           </div>
           <p className="mt-4 text-lg font-medium">Embroidered Shrouds of Modesty (2025)</p>
-        </div>
+        </Link>
 
         {/* Project 2 */}
-        <div className="text-center">
-          <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src={`${basePath}/barbarik.jpg`}
-              alt="Project 2"
-              fill
-              className="object-cover"
-            />
+        <Link href="/Projects/Barbarik" className="text-center group">
+          <div className="relative w-full h-72 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <Image src="/barbs.jpg" alt="Barbarik Project" fill className="object-cover" />
           </div>
           <p className="mt-4 text-lg font-medium">Barbarik (2021)</p>
-        </div>
+        </Link>
 
         {/* Project 3 */}
-        <div className="text-center">
-          <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src={`${basePath}/shiva.jpg`}
-              alt="Project 3"
-              fill
-              className="object-cover"
-            />
+        <Link href="/Projects/Shiva" className="text-center group">
+          <div className="relative w-full h-72 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <Image src="/shiva.jpg" alt="Shiva Project" fill className="object-cover" />
           </div>
           <p className="mt-4 text-lg font-medium">Shiva! The omnipresent..The Omniscient (2021)</p>
-        </div>
+        </Link>
 
         {/* Project 4 */}
-        <div className="text-center">
-          <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src={`${basePath}/chotekhani.jpg`}
-              alt="Project 4"
-              fill
-              className="object-cover"
-            />
+        <Link href="/Projects/SolitaryDancer" className="text-center group">
+          <div className="relative w-full h-72 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <Image src="/solitary.jpg" alt="" fill className="object-cover" />
           </div>
-          <p className="mt-4 text-lg font-medium">Chotekhani Mehfil (2021)</p>
-        </div>
+          <p className="mt-4 text-lg font-medium">Solitary Dancer (2021)</p>
+        </Link>
+
       </div>
     </section>
   );
