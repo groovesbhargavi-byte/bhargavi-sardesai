@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div
       className="min-h-screen w-full bg-fixed bg-center bg-cover"
-      style={{ backgroundImage: `url('${basePath}/hero.jpg')` }}
+      style={{ backgroundImage: `url('/hero.jpg')` }}
     >
       <div className="bg-black/20 min-h-screen w-full">
         <Navbar />
