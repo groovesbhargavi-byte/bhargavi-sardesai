@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
+import { useRouter } from 'next/router';
 
 export default function ContactPage() {
+  const { basePath } = useRouter();
   return (
     <div className="min-h-screen bg-[#2E4C4C] text-white">
       <div className="text-center pt-20 pb-10">
@@ -12,7 +14,7 @@ export default function ContactPage() {
         {/* Left Image */}
         <div className="relative w-full lg:w-1/2 h-[600px]">
           <Image
-            src="/contact.jpg"
+            src= {`${basePath}/contact.jpg`}
             alt="Bhargavi Dance Pose"
             fill
             className="object-cover"

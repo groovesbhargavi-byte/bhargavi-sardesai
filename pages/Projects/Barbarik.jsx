@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
+import { useRouter } from 'next/router';
 
 export default function Barbarik() {
+  const { basePath } = useRouter();
   return (
     <div className="w-full min-h-screen bg-black text-white font-light">
         <Navbar />
@@ -33,7 +35,7 @@ export default function Barbarik() {
           <div className="flex justify-center">
             <div className="relative w-[400px] h-[600px] rounded-lg overflow-hidden">
               <Image
-                src="/barba.jpg"
+                src={`${basePath}/barba.jpg`}
                 alt="Barbarik hero image"
                 fill
                 className="object-cover"
@@ -58,7 +60,7 @@ export default function Barbarik() {
         {/* Left: Portrait B4 (reduced height) */}
         <div className="relative w-full h-[600px] rounded-lg overflow-hidden">
             <Image
-            src="/B4.jpg"
+            src= {`${basePath}/B4.jpg`}
             alt="Barbarik image 4"
             fill
             className="object-cover"
@@ -73,7 +75,7 @@ export default function Barbarik() {
                 className="relative w-full h-[280px] rounded-lg overflow-hidden"
             >
                 <Image
-                src={`/${name}.jpg`}
+                src={`${basePath}/${name}.jpg`}
                 alt={`Barbarik image ${name}`}
                 fill
                 className="object-cover"

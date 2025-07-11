@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
+import { useRouter } from 'next/router';
 
 export default function Shrouds() {
+  const { basePath } = useRouter();
   return (
     <div className="w-full min-h-screen bg-black text-white font-light">
       <Navbar />
@@ -33,7 +35,7 @@ export default function Shrouds() {
           <div className="flex justify-center">
             <div className="relative w-[400px] h-[600px] rounded-lg overflow-hidden">
               <Image
-                src="/S4.jpg"
+                src={`${basePath}/S4.jpg`}
                 alt="Shroud image 4"
                 fill
                 className="object-cover"
@@ -56,7 +58,7 @@ export default function Shrouds() {
           {/* Left: Large Portrait Image (S1) */}
           <div className="relative w-full h-[900px] rounded-lg overflow-hidden">
             <Image
-              src="/S1.jpg"
+              src= {`${basePath}/S1.jpg`}
               alt="Shroud image 1"
               fill
               className="object-cover"
@@ -71,7 +73,7 @@ export default function Shrouds() {
                 className="relative w-full h-[280px] rounded-lg overflow-hidden"
               >
                 <Image
-                  src={`/S${num}.jpg`}
+                  src={`${basePath}/S${num}.jpg`}
                   alt={`Shroud image ${num}`}
                   fill
                   className="object-cover"

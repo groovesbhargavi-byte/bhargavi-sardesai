@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Navbar from '@/components/Navbar'; // include this if you're using a navbar
+import { useRouter } from 'next/router';
 
 export default function Shiva() {
+  const { basePath } = useRouter();
   return (
     <>
       <Navbar />
@@ -47,7 +49,7 @@ export default function Shiva() {
                 className="relative w-full h-[400px] rounded-lg overflow-hidden"
               >
                 <Image
-                  src={`/${name}.jpg`}
+                  src={`${basePath}/${name}.jpg`}
                   alt={`Shiva image ${name}`}
                   fill
                   className="object-cover"
