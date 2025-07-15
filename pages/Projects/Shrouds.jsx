@@ -44,7 +44,7 @@ export default function Shrouds() {
         {/* Concert Video */}
           <div className="w-full max-w-4xl mx-auto my-16 aspect-video rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://youtu.be/OEsQN8pvvFk"
+              src="https://www.youtube.com/embed/OEsQN8pvvFk"
               title="Embroidered Shrouds of Modesty Performance"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
