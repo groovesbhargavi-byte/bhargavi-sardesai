@@ -47,7 +47,7 @@ export default function Shiva() {
                 className="relative w-full h-[400px] rounded-lg overflow-hidden"
               >
                 <Image
-                  src= "/${name}.jpg"
+                  src= {`/${name}.jpg`}
                   alt={`Shiva image ${name}`}
                   fill
                   className="object-cover"

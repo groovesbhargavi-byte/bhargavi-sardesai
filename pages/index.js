@@ -9,10 +9,16 @@ import Footer from '../components/Footer.jsx';
 export default function Home() {
   return (
     <div
-      className="min-h-screen w-full bg-fixed bg-center bg-cover"
+      className="
+        min-h-screen w-full
+        bg-no-repeat
+        bg-cover
+        bg-[position:70%_30%]
+        bg-fixed
+      "
       style={{ backgroundImage: "url('/hero.jpg')" }}
     >
-      <div className="bg-black/20 min-h-screen w-full">
+      <div className="bg-black/20">
         <Navbar />
         <Hero />
         <About />
@@ -23,3 +29,4 @@ export default function Home() {
     </div>
   );
 }
+
